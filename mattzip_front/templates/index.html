@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>맛집 리뷰 요약</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <header>
+            <h1>맛집 리뷰 요약</h1>
+        </header>
+        <main>
+            <section id="search-section">
+                <input type="text" id="search-input" placeholder="가게 이름을 입력하세요">
+                <button id="search-button">검색</button>
+            </section>
+            <section id="restaurants-section">
+                <h2>가게 목록</h2>
+                <div id="restaurants-list"></div>
+            </section>
+            <section id="summary-section">
+                <h2>리뷰 요약</h2>
+                <div id="summary-content"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 맛집 리뷰 요약. All rights reserved.</p>
+        </footer>
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
